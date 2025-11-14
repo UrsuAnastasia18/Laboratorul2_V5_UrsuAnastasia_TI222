@@ -1,4 +1,3 @@
-// Clasa care modelează informațiile despre un doctor
 class Doctor {
   final String name;
   final String specialty;
@@ -10,7 +9,6 @@ class Doctor {
   final double price;
   final String assetImage;
 
-  //constructorul clasei doctor
   Doctor({
     required this.name,
     required this.specialty,
@@ -22,4 +20,19 @@ class Doctor {
     required this.price,
     required this.assetImage,
   });
+
+  //  metoda de conversie din JSON
+  factory Doctor.fromJson(Map<String, dynamic> json) {
+    return Doctor(
+      name: json['name'] ?? '',
+      specialty: json['speciality'] ?? '',
+      rating: (json['rating'] as num?)?.toDouble() ?? 0.0,
+      yearsOfWork: json['years_of_experience'] ?? 0,
+      patients: json['patients_treated'] ?? 0,
+      clinic: json['clinic'] ?? '',
+      location: json['location'] ?? '',
+      price: (json['price'] as num?)?.toDouble() ?? 0.0,
+      assetImage: json['profile_image'] ?? json['assetImage'] ?? '',
+    );
+  }
 }

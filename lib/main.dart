@@ -1,25 +1,29 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'controllers/medicine_controller.dart';
 import 'screens/home_screen.dart';
 
 void main() {
+  // înregistrăm controllerul GetX înainte de pornirea aplicației
+  Get.put(MedicineController());
+
   runApp(const MyApp());
 }
-//pucntul de intrare a aplicatiei
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  //widgetul principal al aplicatiei
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false, //elimina bannerul debug
-      title: 'Laboratoare 2025', //titlu app
+    return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Laboratoare 2025',
       theme: ThemeData(
-        primarySwatch: Colors.teal,//culoare app
-        scaffoldBackgroundColor: Colors.white,//fundal ecran
-        fontFamily: 'Poppins',   //font folosit in toata app
+        primarySwatch: Colors.teal,
+        scaffoldBackgroundColor: Colors.white,
+        fontFamily: 'Poppins',
       ),
-      home: const HomeScreen(), //ecran principal
+      home: const HomeScreen(), // ecranul principal al aplicației
     );
   }
 }

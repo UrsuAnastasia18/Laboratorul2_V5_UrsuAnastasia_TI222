@@ -1,0 +1,90 @@
+{
+  "user": {
+    "name": "Tanvir Ahassan",
+    "location": "Mirpur, Dhaka",
+    "profile_image": "https://randomuser.me/api/portraits/men/32.jpg"
+  },
+  "actions": [
+    {
+      "title": "Book Appointment",
+      "image": "https://images.pexels.com/photos/6129681/pexels-photo-6129681.jpeg"
+    },
+    {
+      "title": "Instant Video Consult",
+      "image": "https://images.pexels.com/photos/7578804/pexels-photo-7578804.jpeg"
+    },
+    {
+      "title": "Medicines",
+      "image": "https://images.pexels.com/photos/3683088/pexels-photo-3683088.jpeg"
+    },
+    {
+      "title": "Lab Tests",
+      "image": "https://images.pexels.com/photos/5863393/pexels-photo-5863393.jpeg"
+    },
+    {
+      "title": "Emergency",
+      "image": "https://images.pexels.com/photos/273188/pexels-photo-273188.jpeg"
+    }
+  ],
+  "specialities": [
+    {
+      "id": 1,
+      "name": "Eye Specialist",
+      "icon": "https://cdn-icons-png.flaticon.com/512/8638/8638394.png"
+    },
+    {
+      "id": 2,
+      "name": "Dentist",
+      "icon": "https://cdn-icons-png.flaticon.com/512/2818/2818366.png"
+    },
+    {
+      "id": 3,
+      "name": "Cardiologist",
+      "icon": "https://cdn-icons-png.flaticon.com/512/7292/7292483.png"
+    },
+    {
+      "id": 4,
+      "name": "Pulmonologist",
+      "icon": "https://cdn-icons-png.flaticon.com/512/4006/4006309.png"
+    },
+    {
+      "id": 5,
+      "name": "Physiotherapist",
+      "icon": "https://cdn-icons-png.flaticon.com/512/3567/3567497.png"
+    }
+  ],
+  "specialists": [
+    {
+      "id": 101,
+      "name": "Dr. Ahsan Rahman",
+      "speciality": "General Practitioner",
+      "rating": 4.8,
+      "available": true,
+      "image": "https://images.pexels.com/photos/5452201/pexels-photo-5452201.jpeg"
+    },
+    {
+      "id": 102,
+      "name": "Dr. Imran Hossain",
+      "speciality": "General Practitioner",
+      "rating": 4.7,
+      "available": true,
+      "image": "https://images.pexels.com/photos/3825529/pexels-photo-3825529.jpeg"
+    },
+    {
+      "id": 103,
+      "name": "Dr. Nafisa Karim",
+      "speciality": "Cardiologist",
+      "rating": 4.9,
+      "available": false,
+      "image": "https://images.pexels.com/photos/8460159/pexels-photo-8460159.jpeg"
+    },
+    {
+      "id": 104,
+      "name": "Dr. Tariq Ahmed",
+      "speciality": "Dentist",
+      "rating": 4.6,
+      "available": true,
+      "image": "https://images.pexels.com/photos/3825528/pexels-photo-3825528.jpeg"
+    }
+  ]
+}
